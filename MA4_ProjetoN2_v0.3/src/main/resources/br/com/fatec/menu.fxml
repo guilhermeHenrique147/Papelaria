@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.MenuController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/style/menu.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="btn_fechar" layoutX="259.0" layoutY="351.0" mnemonicParsing="false" onAction="#btn_fechar" style="-fx-background-color: #08A377;" text="FECHAR" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Pane layoutX="133.0" layoutY="51.0" prefHeight="37.0" prefWidth="335.0" style="-fx-background-color: #08A377;">
+         <children>
+            <Label layoutX="74.0" layoutY="6.0" text="MENU PRINCIPAL" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="133.0" layoutY="88.0" prefHeight="250.0" prefWidth="335.0" style="-fx-background-color: #008B8B;">
+         <children>
+            <Button fx:id="btn_cadastroClientes" alignment="CENTER" layoutX="58.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_cadastroClientes_Click" prefHeight="37.0" prefWidth="219.0" style="-fx-background-color: #ffffff;" text="CADASTRO DE CLIENTES" />
+            <Button fx:id="btn_cadastroProdutos" alignment="CENTER" layoutX="58.0" layoutY="72.0" mnemonicParsing="false" onAction="#btn_cadastroProdutos_Click" prefHeight="37.0" prefWidth="219.0" style="-fx-background-color: #FFFFFF;" text="CADASTRO DE PRODUTOS" />
+            <Button fx:id="btn_cadastroPedidos" alignment="CENTER" layoutX="58.0" layoutY="130.0" mnemonicParsing="false" onAction="#btn_cadastroPedidos_Click" prefHeight="37.0" prefWidth="219.0" style="-fx-background-color: #FFFFFF;" text="CADASTRO DE PEDIDOS" />
+            <Button fx:id="btn_consultaAvancada" alignment="CENTER" layoutX="58.0" layoutY="188.0" mnemonicParsing="false" onAction="#btn_consultaAvancada_Click" prefHeight="37.0" prefWidth="219.0" style="-fx-background-color: #FFFFFF;" text="CONSULTA AVANÇADA" />
+         </children>
+      </Pane>
+      <Pane prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #008B8B;">
+      </Pane>
+   </children>
+</AnchorPane>

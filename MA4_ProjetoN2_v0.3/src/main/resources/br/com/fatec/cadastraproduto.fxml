@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.CadastraprodutoController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/style/cadastraproduto.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-5.0" layoutY="1.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+         <children>
+            <Button fx:id="btn_sair" layoutX="97.0" layoutY="349.0" mnemonicParsing="false" onAction="#btn_fechar" prefHeight="37.0" prefWidth="87.0" style="-fx-background-color: #08A377;" text="SAIR" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Pane layoutX="20.0" layoutY="42.0" prefHeight="294.0" prefWidth="571.0" style="-fx-background-color: #008B8B;">
+               <children>
+                  <Pane layoutX="18.0" prefHeight="37.0" prefWidth="536.0" style="-fx-background-color: #08A377;">
+                     <children>
+                        <Label layoutX="123.0" layoutY="4.0" text="CADASTRO DE PRODUTOS" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="H_RESIZE" />
+                     </cursor>
+                  </Pane>
+                  <GridPane fx:id="gridDados" layoutX="14.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" prefWidth="209.0">
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="ID:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label text="NOME:" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="VALOR:" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txt_id" prefHeight="27.0" prefWidth="208.0" GridPane.columnIndex="2" />
+                        <TextField fx:id="txt_valor" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <TextField fx:id="txt_nome" prefHeight="37.0" prefWidth="194.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="66.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="0.0" prefWidth="1.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="143.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane fx:id="gridDados1" layoutX="239.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" prefWidth="308.0">
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="DESCRIÇÃO:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label text="FORNECEDOR:" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txt_fornecedor" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="txt_descricao" prefHeight="37.0" prefWidth="194.0" GridPane.columnIndex="2" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="118.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="0.0" prefWidth="0.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="190.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+            </Pane>
+            <Pane layoutX="5.0" layoutY="-1.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #008B8B;">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+            </Pane>
+            <Button fx:id="btn_excluir" layoutX="211.0" layoutY="349.0" mnemonicParsing="false" onAction="#deletarProdutoAction" style="-fx-background-color: #00BA51;" text="EXCLUIR" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_editar" layoutX="323.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleEditarProdutoAction" style="-fx-background-color: #00BA51;" text="EDITAR" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_salvar" layoutX="431.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleSalvarProdutosButtonAction" style="-fx-background-color: #00BA51;" text="SALVAR" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <stylesheets>
+            <URL value="@/br/com/fatec/style/cadastracliente.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

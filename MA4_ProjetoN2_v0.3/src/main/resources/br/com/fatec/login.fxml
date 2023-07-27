@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.LoginController">
+    <stylesheets>
+        <URL value="@/styles/login.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-5.0" prefHeight="329.0" prefWidth="528.0" styleClass="mainFxmlClass">
+         <children>
+            <Pane layoutX="69.0" layoutY="42.0" prefHeight="305.0" prefWidth="472.0" style="-fx-background-color: #008B8B;">
+               <children>
+                  <Pane layoutX="157.0" prefHeight="37.0" prefWidth="158.0" style="-fx-background-color: #08A377;">
+                     <children>
+                        <Label layoutX="43.0" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="H_RESIZE" />
+                     </cursor>
+                  </Pane>
+                  <TextField fx:id="txt_usuario" layoutX="222.0" layoutY="75.0" prefHeight="37.0" prefWidth="147.0" />
+                  <Label layoutX="113.0" layoutY="78.0" text="USUÁRIO:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="134.0" layoutY="131.0" text="SENHA:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rbtn_salvarSenha" layoutX="176.0" layoutY="184.0" mnemonicParsing="false" text="SALVAR SENHA" textFill="#d2f5ff">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </RadioButton>
+                  <Button fx:id="btn_entrar" layoutX="194.0" layoutY="233.0" mnemonicParsing="false" style="-fx-background-color: #08A377;" text="ENTRAR" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Hyperlink fx:id="hl_senha" layoutX="169.0" layoutY="272.0" text="Esqueci minha senha" textFill="#00eeff">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <PasswordField fx:id="txt_senha" layoutX="222.0" layoutY="130.0" prefHeight="37.0" prefWidth="147.0" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+            </Pane>
+            <Pane layoutX="5.0" layoutY="-1.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #008B8B;">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+            </Pane>
+         </children>
+         <stylesheets>
+            <URL value="@/br/com/fatec/style/cadastracliente.css" />
+         </stylesheets>
+      </AnchorPane>
+      <Hyperlink fx:id="hl_administrador" layoutX="211.0" layoutY="358.0" text="Entrar como Administrador" textFill="#2a00ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</fx:root>

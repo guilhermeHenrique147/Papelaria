@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.ConsultaavancadaController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/style/consultaavancada.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-5.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+         <children>
+            <Pane layoutX="20.0" layoutY="42.0" prefHeight="346.0" prefWidth="571.0" style="-fx-background-color: #008B8B;">
+               <children>
+                  <Pane layoutX="25.0" prefHeight="37.0" prefWidth="522.0" style="-fx-background-color: #08A377;">
+                     <children>
+                        <Label layoutX="132.0" layoutY="5.0" text="CONSULTA AVANÇADA" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="H_RESIZE" />
+                     </cursor>
+                  </Pane>
+                  <Button fx:id="btn_sair" layoutX="480.0" layoutY="58.0" mnemonicParsing="false" onAction="#btn_fechar" prefHeight="37.0" prefWidth="61.0" style="-fx-background-color: #08A377;" text="SAIR" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txt_consulta" layoutX="35.0" layoutY="57.0" prefHeight="37.0" prefWidth="267.0" />
+                  <Button fx:id="btn_limpar" layoutX="309.0" layoutY="57.0" mnemonicParsing="false" onAction="#deletarPedidoListaAction" prefHeight="37.0" prefWidth="54.0" text="X">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_buscar" layoutX="373.0" layoutY="57.0" mnemonicParsing="false" onAction="#handleSearchButtonAction" prefHeight="39.0" prefWidth="54.0" text="🔍" />
+                  <ListView fx:id="listaAvancada" layoutX="35.0" layoutY="112.0" prefHeight="200.0" prefWidth="506.0" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+            </Pane>
+            <Pane layoutX="5.0" layoutY="-1.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #008B8B;">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+            </Pane>
+         </children>
+         <stylesheets>
+            <URL value="@/br/com/fatec/style/cadastracliente.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</AnchorPane>
