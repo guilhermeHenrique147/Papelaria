@@ -1,0 +1,15 @@
+br\com\fatec\Persistencia\Banco.class
+br\com\fatec\Controller\CadastrapedidosController.class
+br\com\fatec\Model\Pedidos.class
+br\com\fatec\View_PapelariaController.class
+br\com\fatec\DAO\PedidosDAO.class
+br\com\fatec\DAO\ClientesDAO.class
+br\com\fatec\Controller\CadastraprodutoController.class
+br\com\fatec\DAO\ProdutosDAO.class
+br\com\fatec\Model\Clientes.class
+br\com\fatec\DAO\DAO.class
+br\com\fatec\Controller\ConsultaavancadaController.class
+br\com\fatec\Model\Produtos.class
+br\com\fatec\App.class
+br\com\fatec\Controller\MenuController.class
+br\com\fatec\Controller\CadastraclienteController.class
